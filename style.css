@@ -80,6 +80,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: var(--light-grey);
+  z-index: 99;
 }
 
 #navigation {
@@ -238,6 +239,10 @@ nav {
   font-weight: 800;
 }
 
+.feature img {
+  animation: imgAnim 0.5s infinite alternate;
+}
+
 #portfolio, #reviews {
   background: var(--light-grey);
 }
@@ -394,6 +399,10 @@ nav {
   border-radius: 5px;
 }
 
+.pricing-card a:hover {
+  color: var(--orange);
+  background: #fff;
+}
 
 
 
@@ -414,6 +423,9 @@ nav {
 
 .contact-container form {
   width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact-container form input {
@@ -421,6 +433,7 @@ nav {
   font-size: 0.8rem;
   border: 1px solid rgba(0,0,0,0.25);
   border-radius: 3px;
+  width: 48%;
 }
 
 .contact-container form textarea {
@@ -434,4 +447,29 @@ nav {
   font-size: 0.8rem;
   border: 1px solid rgba(0,0,0,0.25);
   border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes imgAnim {
+  0%,100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
 }
