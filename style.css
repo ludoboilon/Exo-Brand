@@ -72,6 +72,10 @@ header {
 }
 
 nav {
+  background: var(--orange);
+  padding: 10px 10%;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
